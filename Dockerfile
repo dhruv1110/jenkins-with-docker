@@ -32,6 +32,6 @@ RUN curl -L https://github.com/docker/compose/releases/download/1.16.1/docker-co
 # give jenkins docker rights
 RUN usermod -aG docker jenkins
 
-CMD service docker start
-
 USER jenkins
+
+CMD service docker start
